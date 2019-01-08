@@ -7,7 +7,8 @@
     "mdbreact": "4.8.7",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
-    "react-scripts": "2.0.5"
+    "react-scripts": "2.0.5",
+    "react-speech-recognition": "^1.0.7"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter } from 'react-router-dom';
 import { Navbar, NavbarBrand, NavbarToggler, Collapse } from "mdbreact";
 
 class App extends Component {
@@ -26,7 +27,6 @@ class App extends Component {
             isOpen={this.state.isOpen}
             navbar
           >
-          { this.props.isAuthenticated ? <SignedInLink /> : null}
           </Collapse>
       </Navbar>
       </div>
