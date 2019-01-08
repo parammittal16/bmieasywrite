@@ -1,19 +1,36 @@
 import React, { Component } from 'react';
-import { Button } from "mdbreact";
-import logo from './logo.png';
+import { Navbar, NavbarBrand, NavbarToggler, Collapse } from "mdbreact";
 
 class App extends Component {
+  state = {
+    isOpen: false
+  };
+
+  toggleCollapse = () => { 
+      this.setState({ isOpen: !this.state.isOpen });
+  }
+  
   render() {
     return (
+      <BrowserRouter basename="/bmieasywrite">
       <div className="App">
-        <header className="App-header ">
-          <img src={logo} alt="logo" className="App-logo" />
-          <h1 className="App-title">Welcom to Your MDB React App</h1>
-        </header>
-        <p className="mb-2">The application is configured and ready to import our components.</p>
-        <Button href="https://mdbootstrap.com/react/" target="blank" color="light-blue"><strong>Check out our docs!</strong></Button>
+      <Navbar color="indigo" dark expand="md">
+          <NavbarBrand>
+            <strong className="white-text">BookmanIndia</strong>
+          </NavbarBrand>
+          <NavbarToggler
+            onClick={this.toggleCollapse}
+          />
+          <Collapse
+            id="navbarCollapse3"
+            isOpen={this.state.isOpen}
+            navbar
+          >
+          { this.props.isAuthenticated ? <SignedInLink /> : null}
+          </Collapse>
+      </Navbar>
       </div>
-    );
+      </BrowserRouter>);
   }
 }
 
