@@ -36,11 +36,12 @@ class App extends Component {
   }
   
   render() {
+    if(this.props.recognition){
     this.props.recognition.lang = this.state.lang;
+    }
     if (!this.props.browserSupportsSpeechRecognition) {
       return null
     }
-    console.log(this.state);
     return (
       <BrowserRouter basename="/bmieasywrite">
       <div className="App">
