@@ -5,6 +5,7 @@
   "// If You want to install mdbreact from our GitLab repository, please replace '4.8.7' with gitURL provided here ->": "git+https://oauth2:<YOUR-TOKEN-GOES-HERE>@git.mdbootstrap.com/mdb/react/re-pro.git",
   "dependencies": {
     "mdbreact": "4.8.7",
+    "prop-types": "^15.6.2",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-scripts": "2.0.5",
@@ -22,7 +23,7 @@
     "renamer": "^1.0.0",
     "rimraf": "^2.6.2"
   },
-  "homepage" : "http://parammital16.github.io/bmieasywrite",
+  "homepage": "http://parammital16.github.io/bmieasywrite",
   "browserslist": [
     ">0.2%",
     "not dead",
