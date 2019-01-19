@@ -43,7 +43,7 @@ class App extends Component {
       return null
     }
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="/bmieasywrite">
       <div className="App">
       <Navbar color="indigo" dark expand="md">
           <NavbarBrand>
