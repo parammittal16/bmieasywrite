@@ -41,13 +41,9 @@
 	font-family: 'Poppins', sans-serif;
 }
 
-.Page {
-	padding: 100px;
-	border: 2px solid rgb(44, 44, 44);
-}
-.Navit {
+:local(.Navit) {
 	margin-left: 5px;
-	margin-right: 5px;
+	margin-right: 10px;
 }
 /*
 https://bmiadmin.firebaseio.com/books.json?orderBy="isbn"&startAt=11&print=pretty
